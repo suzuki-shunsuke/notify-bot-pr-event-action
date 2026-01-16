@@ -1,0 +1,22 @@
+name: Notify Events On Pull Requests By Bots To Human
+description: Notify events on pull requests by Bots to related people
+author: Shunsuke Suzuki
+branding:
+  icon: shield
+  color: purple
+inputs:
+  github_token:
+    description: |
+      GitHub Access Token.
+      The permission `pull_requests:write` is required.
+    required: false
+    default: ${{ github.token }}
+  machine_users:
+    description: |
+      Logins of machine users to exclude from notifications.
+      One login per line. Lines starting with # are ignored.
+      Note: Users with [bot] in their login are automatically excluded.
+    required: false
+runs:
+  using: "node20"
+  main: "dist/index.js"
