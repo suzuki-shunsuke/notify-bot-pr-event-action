@@ -1,4 +1,4 @@
-name: Notify Events On Pull Requests By Bots To Human
+name: Notify Event On Bot PR
 description: Notify events on pull requests by Bots to related people
 author: Shunsuke Suzuki
 branding:
