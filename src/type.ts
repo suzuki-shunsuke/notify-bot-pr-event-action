@@ -20,8 +20,12 @@ const Commit = z.object({
   committer: z.object({
     user: z.nullable(User),
   }),
-  author: z.object({
-    user: z.nullable(User),
+  authors: z.object({
+    nodes: z.array(
+      z.object({
+        user: z.nullable(User),
+      }),
+    ),
   }),
 });
 export type Commit = z.infer<typeof Commit>;
