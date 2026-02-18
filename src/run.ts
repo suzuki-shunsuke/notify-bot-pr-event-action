@@ -74,7 +74,7 @@ const run = async (input: lib.Input): Promise<void> => {
   core.info(`Comment posted: ${result.htmlUrl}`);
 };
 
-const collectUsersToNotify = (
+export const collectUsersToNotify = (
   input: lib.Input,
   commits: type.PullRequestCommit[],
   reviews: type.Review[],
@@ -109,7 +109,7 @@ const collectUsersToNotify = (
   return users;
 };
 
-const filterUsers = (
+export const filterUsers = (
   users: Set<string>,
   actor: string,
   machineUsers: Set<string>,
@@ -131,7 +131,7 @@ const filterUsers = (
   });
 };
 
-const formatComment = (users: string[], input: lib.Input): string => {
+export const formatComment = (users: string[], input: lib.Input): string => {
   const mentions = users.map((u) => `@${u}`).join(" ");
 
   let action: string;
