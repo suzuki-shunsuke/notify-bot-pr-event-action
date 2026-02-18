@@ -1,6 +1,13 @@
 # notify-bot-pr-event-action
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/suzuki-shunsuke/notify-bot-pr-event-action)
+
 **notify-bot-pr-event-action** is a GitHub Action that notifies users about updates to pull requests created by GitHub Apps or machine users (hereafter referred to as “bots”).
+
+![approve](https://github.com/user-attachments/assets/020c7c38-79ee-4b7c-8d8d-4a09ad360b90)
+
+![merge](https://github.com/user-attachments/assets/afb3e303-8e91-4e32-a4b8-59e8549dd2a1)
+
 It improves the experience of working with bot-created PRs.
 
 Consider the following cases:
