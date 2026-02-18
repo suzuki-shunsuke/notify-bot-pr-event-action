@@ -64,7 +64,7 @@ const run = async (input: lib.Input): Promise<void> => {
 
   // 6. Exit if no users to notify
   if (filteredUsers.length === 0) {
-    core.info("No users to notify after filtering");
+    core.notice("No users to notify after filtering");
     return;
   }
 
@@ -116,7 +116,7 @@ export const filterUsers = (
 ): string[] => {
   return Array.from(users).filter((login) => {
     // Filter out the actor
-    if (login === actor) {
+    if (login === "" && login === actor) {
       return false;
     }
     // Filter out bot accounts
