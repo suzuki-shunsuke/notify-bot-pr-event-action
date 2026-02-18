@@ -32,6 +32,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npx eslint
+      - run: npm t
 
       - uses: suzuki-shunsuke/release-js-action@7586139c29abe68e2bc84395ac4300f20112b764 # v0.1.8
         with:
