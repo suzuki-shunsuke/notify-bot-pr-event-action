@@ -16,3 +16,54 @@ However, when the PR author is a bot, no one receives these notifications. As a 
 This becomes particularly problematic in teams that follow the convention that `it is the author—not the reviewer—who is responsible for merging the PR`.
 
 **notify-bot-pr-event-action** addresses this problem by posting comments on the PR when events such as reviews, merges, or closures occur. It mentions relevant users—such as committers or assignees—to ensure that humans are properly notified about these events.
+
+## Notified Events
+
+- pull_request_review
+  - approved
+  - request changes
+  - comment
+- pull_request
+  - merged
+  - closed
+
+## Notified Users
+
+- committers
+- commit author
+- commit co-authors
+- assignees
+- approvers
+
+The following users are excluded.
+
+- `github.actor`
+- machine_users
+- GitHub Apps
+
+## How To Use
+
+```yaml
+---
+name: Notify bot pr event
+on:
+  pull_request:
+    types: [closed]
+  pull_request_review:
+    types: [submitted]
+jobs:
+  notify-bot-pr-event:
+    # Filter events
+    # pr author: Bot
+    if: |
+      endsWith(github.event.pull_request.user.login, '[bot]') &&
+      ((github.event_name == 'pull_request_review' && github.event.review.state == 'approved') ||
+      github.event_name == 'pull_request')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      pull-requests: write # To post pr comments
+      contents: read # To read commits
+    steps:
+      - uses: suzuki-shunsuke/notify-bot-pr-event-action@latest
+```

@@ -48,10 +48,12 @@ export const getPullRequest = async (
                 resourcePath
               }
             }
-            author {
-              user {
-                login
-                resourcePath
+            authors(first: 100) {
+              nodes {
+                user {
+                  login
+                  resourcePath
+                }
               }
             }
           }
@@ -113,10 +115,12 @@ export const listCommits = async (
                 resourcePath
               }
             }
-            author {
-              user {
-                login
-                resourcePath
+            authors(first: 100) {
+              nodes {
+                user {
+                  login
+                  resourcePath
+                }
               }
             }
           }

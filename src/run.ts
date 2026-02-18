@@ -87,8 +87,10 @@ const collectUsersToNotify = (
     if (node.commit.committer.user) {
       users.add(node.commit.committer.user.login);
     }
-    if (node.commit.author.user) {
-      users.add(node.commit.author.user.login);
+    for (const author of node.commit.authors.nodes) {
+      if (author.user) {
+        users.add(author.user.login);
+      }
     }
   }
 
