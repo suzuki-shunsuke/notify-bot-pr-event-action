@@ -64,7 +64,7 @@ const run = async (input: lib.Input): Promise<void> => {
 
   // 6. Exit if no users to notify
   if (filteredUsers.length === 0) {
-    core.info("No users to notify after filtering");
+    core.notice("No users to notify after filtering");
     return;
   }
 
