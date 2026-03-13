@@ -116,7 +116,7 @@ export const filterUsers = (
 ): string[] => {
   return Array.from(users).filter((login) => {
     // Filter out the actor
-    if (login === actor) {
+    if (login === "" && login === actor) {
       return false;
     }
     // Filter out bot accounts
