@@ -6,31 +6,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/int128/ghcp/v1.15.2/ghcp_darwin_amd64.zip",
-      "checksum": "37AAC4B1D7E451ABAA6D49B87608D9010EF3B1CD56E310A0A6895CE433292DBB",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/int128/ghcp/v1.15.2/ghcp_darwin_arm64.zip",
-      "checksum": "E292732BA0B6D3EF2A19FEF0062EC72DC3E3E758568BABFE07D27F65D90348B1",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/int128/ghcp/v1.15.2/ghcp_linux_amd64.zip",
-      "checksum": "A1E13FB5FEC92913E67984D88DB6D4C39473CCA3A6B9927621E410EE431F3532",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/int128/ghcp/v1.15.2/ghcp_linux_arm64.zip",
-      "checksum": "5B0A4FFDBAA27FFE4CBAF13C3C4B6AC3EAB25D447947FAE114F89D1EE4EBF734",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/int128/ghcp/v1.15.2/ghcp_windows_amd64.zip",
-      "checksum": "2E513207F22897E03B54A119ACECCFE623DBCC25C0DCCBDCBB15A3247616CBB7",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/reviewdog/reviewdog/v0.21.0/reviewdog_0.21.0_Darwin_arm64.tar.gz",
       "checksum": "C28DEF83AF6C5AA8728D6D18160546AFD3E5A219117715A2C6C023BD16F14D10",
       "algorithm": "sha256"
@@ -207,8 +182,8 @@
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.480.0/registry.yaml",
-      "checksum": "C6BF704BB5915800583FE9D1A54E256449ADBEF223174AAA5F2FFC20F1CD8DF63D8CFFB34C0CD476EB959FD8523E0D8431CF4667998ACCF6B05C3BD3BA35093E",
-      "algorithm": "sha512"
+      "checksum": "36E9D1543838F373E6D31C9484538DB3A2352663F43EFA359E154A7C70209A87",
+      "algorithm": "sha256"
     }
   ]
 }
