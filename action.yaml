@@ -18,5 +18,5 @@ inputs:
       Note: Users with [bot] in their login are automatically excluded.
     required: false
 runs:
-  using: "node20"
+  using: "node24"
   main: "dist/index.js"
