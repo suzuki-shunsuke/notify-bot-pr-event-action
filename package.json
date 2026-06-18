@@ -18,13 +18,13 @@
     "@eslint/js": "10.0.1",
     "@types/node": "24.13.2",
     "@vercel/ncc": "0.44.0",
-    "@vitest/coverage-v8": "4.1.8",
+    "@vitest/coverage-v8": "4.1.9",
     "eslint": "10.5.0",
     "globals": "17.6.0",
     "jiti": "2.7.0",
     "prettier": "3.8.4",
     "typescript": "6.0.3",
     "typescript-eslint": "8.61.1",
-    "vitest": "4.1.8"
+    "vitest": "4.1.9"
   }
 }
