@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "ncc build src/main.ts --license LICENSE",
-    "fmt": "prettier --write .",
+    "fmt": "npm ci --prefix .github/prettier --no-audit --no-fund && .github/prettier/node_modules/.bin/prettier --write .",
     "test": "vitest --run",
     "test:coverage": "vitest --run --coverage",
     "lint": "eslint"
@@ -22,7 +22,6 @@
     "eslint": "10.12.0",
     "globals": "17.13.0",
     "jiti": "2.7.0",
-    "prettier": "3.9.10",
     "typescript": "6.0.3",
     "typescript-eslint": "8.71.1",
     "vitest": "5.0.3"
